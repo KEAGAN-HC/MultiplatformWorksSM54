@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Pokémon</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      text-align: center;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ff6347;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .pokemon-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .pokemon-card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      width: 220px;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pokemon-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .pokemon-card img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+
+    .pokemon-card h3 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      color: #444;
+    }
+
+    .pokemon-card p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .selected-card {
+      background-color: #ffffff;
+      border: 2px solid #ff6347;
+      padding: 20px;
+      width: 300px;
+      margin: 20px auto;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .selected-card:hover {
+      transform: scale(1.02);
+    }
+
+    .selected-card img {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 15px;
+    }
+
+    .selected-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #ff6347;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de Pokémon</h1>
+  <div id="selected-card" class="selected-card">
+    <h3>Selecciona un Pokémon</h3>
+    <p>Aquí aparecerán los detalles del Pokémon seleccionado.</p>
+  </div>
+  <div id="pokemon-list" class="pokemon-list"></div>
+  <script src="/Tarea03_Funcionalidad con JS/JS/script.js" defer></script>
+</body>
+</html>
